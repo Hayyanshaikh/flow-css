@@ -329,48 +329,49 @@
         </div>
       </header>
       <article class="content">
-        <div class="group mb-5">
-          <h3 class="weight-700">Phosphor icons</h3>
-          <p class="text-lg mb-5">To use icons, you can utilize <a href="https://phosphoricons.com">Phosphor Icons</a>. Add the following CDN to your <code>index.html</code> file. For more details, visit the <a href="https://github.com/phosphor-icons/homepage">Phosphor Icons documentation</a></p>
-          <pre style="tab-size: 6;">
+        <div class="group">
+          <h4 class="weight-700">Phosphor Icons Integration</h4>
+          <h6 class="weight-700">Using CDN:</h6>
+          <ol class="unstyled-list pl-3">
+            <li>
+              <p class="mb-2"><strong>1. </strong>First, add the following `script` tag within the head section of your HTML document:</p>
+              <pre>
                 <code class="language-html">
-&lt;!doctype html&gt;
-&lt;html lang="en"&gt;
-  &lt;head&gt;
-    &lt;meta charset="utf-8"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1"/&gt;
-    &lt;!-- flow style.css file --&gt;
-    &lt;link rel="stylesheet" href="https://hayyanshaikh.github.io/flow-css/css/style.css"/&gt;
-    &lt;title&gt;flow demo&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;h1&gt;Phosphor icons&lt;/h1&gt;
-
-    &lt;i class="ph-thin ph-flower-tulip"&gt;&lt;/i&gt;
-    &lt;i class="ph-light ph-tote-simple"&gt;&lt;/i&gt;
-    &lt;i class="ph ph-heart"&gt;&lt;/i&gt;
-    &lt;i class="ph-bold ph-globe-hemisphere-east"&gt;&lt;/i&gt;
-    &lt;i class="ph-fill ph-trash"&gt;&lt;/i&gt;
-    &lt;i class="ph-duotone ph-watch"&gt;&lt;/i&gt;
-
-    &lt;!-- flow script.js file --&gt;
-    &lt;script src="https://unpkg.com/@phosphor-icons/web"&gt;&lt;/script&gt;
-    &lt;script src="https://hayyanshaikh.github.io/flow-css/js/jquery.js"&gt;&lt;/script&gt;
-    &lt;script src="https://hayyanshaikh.github.io/flow-css/js/script.js"&gt;&lt;/script&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
+&lt;script src="https://unpkg.com/@phosphor-icons/web"&gt;&lt;/script&gt;
                 </code>
               </pre>
-
-              <h5 class="weight-700 mb-2">Download</h5>
-              <p class="mb-3"><strong class="weight-600">Note: </strong>If you want to download and use Phosphor icons, <a href="./downloads/icons.zip">download</a> them and use them like this.</p>
-
-
-          <pre style="tab-size: 6;">
+            </li>
+            <li>
+              <p class="mb-2"><strong>2. </strong>Now, you can use the icons in your project. Example:</p>
+              <pre>
+                <code class="language-html">
+&lt;i class="ph ph-heart"&gt;&lt;/i&gt;
+                </code>
+              </pre>
+            </li>
+          </ol>
+          <h6 class="weight-700 mt-5">Using Downloaded Files:</h6>
+          <ol class="unstyled-list pl-3">
+            <li>
+              <p><strong>1. </strong><a href="./downloads/icons.zip">Download Phosphor icons</a> and place the phosphor-icons.js file in the js folder of your project directory.</p>
+            </li>
+            <li>
+              <p class="mb-2"><strong>2. </strong>Add the following `script` tag within the head section of your HTML document:</p>
+              <pre>
                 <code class="language-html">
 &lt;script src="./js/phosphor-icons.js"&gt;&lt;/script&gt;
                 </code>
               </pre>
+            </li>
+            <li>
+              <p class="mb-2"><strong>3. </strong>Now, you can use the icons in your project. Example:</p>
+              <pre>
+                <code class="language-html">
+&lt;i class="ph ph-heart"&gt;&lt;/i&gt;
+                </code>
+              </pre>
+            </li>
+          </ol>
         </div>
       </article>
       <footer class="footer"></footer>

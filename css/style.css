@@ -1052,7 +1052,7 @@ p,
 
 strong {
   color: var(--gray-700);
-  font-weight: var(--weight-500);
+  font-weight: var(--weight-600);
 }
 
 .text-primary {
@@ -1159,7 +1159,9 @@ strong {
 .number-list {
   list-style: decimal inside;
 }
-
+li{
+  margin-bottom: 10px;
+}
 li p {
   display: inline-block;
 }
@@ -1383,6 +1385,7 @@ li p {
 
 .dashboard-list-item {
   overflow: hidden;
+  margin-bottom: 0;
   position: relative;
   transition: 0.2s ease-in-out;
   border-radius: var(--rounded);
@@ -1591,7 +1594,7 @@ li p {
 =            Code highlight            =
 ======================================*/
 pre {
-  margin: -20px 0;
+  margin: -20px 0 -40px;
 }
 
 pre * {
