@@ -177,6 +177,13 @@
   --weight-700: 700;
   --weight-800: 800;
   --weight-900: 900;
+  --primary-border: inset 0 0 0 1px var(--primary);
+  --secondary-border: inset 0 0 0 1px var(--secondary);
+  --success-border: inset 0 0 0 1px var(--success);
+  --danger-border: inset 0 0 0 1px var(--danger);
+  --warning-border: inset 0 0 0 1px var(--warning);
+  --info-border: inset 0 0 0 1px var(--info);
+  --muted-border: inset 0 0 0 1px var(--muted);
 }
 
 * {
@@ -1051,6 +1058,7 @@ p,
 }
 
 strong {
+  display: inline-block;
   color: var(--gray-700);
   font-weight: var(--weight-600);
 }
@@ -1159,9 +1167,11 @@ strong {
 .number-list {
   list-style: decimal inside;
 }
-li{
+
+li {
   margin-bottom: 10px;
 }
+
 li p {
   display: inline-block;
 }
@@ -1335,6 +1345,364 @@ li p {
   color: var(--white);
   border-color: var(--info);
   background-color: var(--info-dark);
+}
+
+/*----------  Button  ----------*/
+.btn {
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  display: inline-block;
+  transition: 0.2s ease-in-out;
+}
+
+.btn:hover {
+  color: var(--white);
+}
+
+/* Primary Buttons */
+.theme {
+  background-color: var(--theme);
+  color: var(--white);
+}
+.primary {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.primary-light {
+  background-color: var(--primary-light);
+  color: var(--primary-dark);
+}
+
+.primary-outline {
+  background-color: transparent;
+  box-shadow: var(--primary-border);
+  color: var(--primary);
+}
+
+.primary-light-outline {
+  background-color: var(--primary-light);
+  color: var(--primary-dark);
+  box-shadow: var(--primary-border);
+}
+
+/* Secondary Buttons */
+.secondary {
+  background-color: var(--secondary);
+  color: var(--white);
+}
+
+.secondary-light {
+  background-color: var(--secondary-light);
+  color: var(--secondary-dark);
+}
+
+.secondary-outline {
+  background-color: transparent;
+  box-shadow: var(--secondary-border);
+  color: var(--secondary);
+}
+
+.secondary-light-outline {
+  background-color: var(--secondary-light);
+  color: var(--secondary-dark);
+  box-shadow: var(--secondary-border);
+}
+
+/* Success Buttons */
+.success {
+  background-color: var(--success);
+  color: var(--white);
+}
+
+.success-light {
+  background-color: var(--success-light);
+  color: var(--success-dark);
+}
+
+.success-outline {
+  background-color: transparent;
+  box-shadow: var(--success-border);
+  color: var(--success);
+}
+
+.success-light-outline {
+  background-color: var(--success-light);
+  color: var(--success-dark);
+  box-shadow: var(--success-border);
+}
+
+/* Danger Buttons */
+.danger {
+  background-color: var(--danger);
+  color: var(--white);
+}
+
+.danger-light {
+  background-color: var(--danger-light);
+  color: var(--danger-dark);
+}
+
+.danger-outline {
+  background-color: transparent;
+  box-shadow: var(--danger-border);
+  color: var(--danger);
+}
+
+.danger-light-outline {
+  background-color: var(--danger-light);
+  color: var(--danger-dark);
+  box-shadow: var(--danger-border);
+}
+
+/* Warning Buttons */
+.warning {
+  background-color: var(--warning);
+  color: var(--white);
+}
+
+.warning-light {
+  background-color: var(--warning-light);
+  color: var(--warning-dark);
+}
+
+.warning-outline {
+  background-color: transparent;
+  box-shadow: var(--warning-border);
+  color: var(--warning);
+}
+
+.warning-light-outline {
+  background-color: var(--warning-light);
+  color: var(--warning-dark);
+  box-shadow: var(--warning-border);
+}
+
+/* Info Buttons */
+.info {
+  background-color: var(--info);
+  color: var(--white);
+}
+
+.info-light {
+  background-color: var(--info-light);
+  color: var(--info-dark);
+}
+
+.info-outline {
+  background-color: transparent;
+  box-shadow: var(--info-border);
+  color: var(--info);
+}
+
+.info-light-outline {
+  background-color: var(--info-light);
+  color: var(--info-dark);
+  box-shadow: var(--info-border);
+}
+
+/* Muted Buttons */
+.muted {
+  background-color: var(--muted);
+  color: var(--black);
+}
+
+.muted-light {
+  background-color: var(--muted-light);
+  color: var(--muted-dark);
+}
+
+.muted-outline {
+  background-color: transparent;
+  box-shadow: var(--muted-border);
+  color: var(--muted-dark);
+}
+
+.muted-light-outline {
+  background-color: var(--muted-light);
+  color: var(--muted-dark);
+  box-shadow: var(--muted-border);
+}
+
+/* Primary Buttons */
+.primary:hover,
+.primary:focus,
+.primary:active {
+  background-color: var(--primary-dark);
+}
+
+.primary-light:hover,
+.primary-light:focus,
+.primary-light:active {
+  background-color: var(--primary);
+}
+
+.primary-outline:hover,
+.primary-outline:focus,
+.primary-outline:active {
+  background-color: var(--primary);
+}
+
+.primary-light-outline:hover,
+.primary-light-outline:focus,
+.primary-light-outline:active {
+  background-color: var(--primary);
+}
+
+/* Secondary Buttons */
+.secondary:hover,
+.secondary:focus,
+.secondary:active {
+  background-color: var(--secondary-dark);
+}
+
+.secondary-light:hover,
+.secondary-light:focus,
+.secondary-light:active {
+  background-color: var(--secondary);
+}
+
+.secondary-outline:hover,
+.secondary-outline:focus,
+.secondary-outline:active {
+  background-color: var(--secondary);
+}
+
+.secondary-light-outline:hover,
+.secondary-light-outline:focus,
+.secondary-light-outline:active {
+  background-color: var(--secondary);
+}
+
+/* Success Buttons */
+.success:hover,
+.success:focus,
+.success:active {
+  background-color: var(--success-dark);
+}
+
+.success-light:hover,
+.success-light:focus,
+.success-light:active {
+  background-color: var(--success);
+}
+
+.success-outline:hover,
+.success-outline:focus,
+.success-outline:active {
+  background-color: var(--success);
+}
+
+.success-light-outline:hover,
+.success-light-outline:focus,
+.success-light-outline:active {
+  background-color: var(--success);
+}
+
+/* Danger Buttons */
+.danger:hover,
+.danger:focus,
+.danger:active {
+  background-color: var(--danger-dark);
+}
+
+.danger-light:hover,
+.danger-light:focus,
+.danger-light:active {
+  background-color: var(--danger);
+}
+
+.danger-outline:hover,
+.danger-outline:focus,
+.danger-outline:active {
+  background-color: var(--danger);
+}
+
+.danger-light-outline:hover,
+.danger-light-outline:focus,
+.danger-light-outline:active {
+  background-color: var(--danger);
+}
+
+/* Warning Buttons */
+.warning:hover,
+.warning:focus,
+.warning:active {
+  background-color: var(--warning-dark);
+}
+
+.warning-light:hover,
+.warning-light:focus,
+.warning-light:active {
+  background-color: var(--warning);
+}
+
+.warning-outline:hover,
+.warning-outline:focus,
+.warning-outline:active {
+  background-color: var(--warning);
+}
+
+.warning-light-outline:hover,
+.warning-light-outline:focus,
+.warning-light-outline:active {
+  background-color: var(--warning);
+}
+
+/* Info Buttons */
+.info:hover,
+.info:focus,
+.info:active {
+  background-color: var(--info-dark);
+}
+
+.info-light:hover,
+.info-light:focus,
+.info-light:active {
+  background-color: var(--info);
+}
+
+.info-outline:hover,
+.info-outline:focus,
+.info-outline:active {
+  background-color: var(--info);
+}
+
+.info-light-outline:hover,
+.info-light-outline:focus,
+.info-light-outline:active {
+  background-color: var(--info);
+}
+
+/* Muted Buttons */
+.muted:hover,
+.muted:focus,
+.muted:active {
+  background-color: var(--muted-dark);
+}
+
+.muted-light:hover,
+.muted-light:focus,
+.muted-light:active {
+  color: var(--black);
+  background-color: var(--muted);
+}
+
+.muted-outline:hover,
+.muted-outline:focus,
+.muted-outline:active {
+  color: var(--black);
+  background-color: var(--muted);
+}
+
+.muted-light-outline:hover,
+.muted-light-outline:focus,
+.muted-light-outline:active {
+  color: var(--black);
+  background-color: var(--muted);
 }
 
 /*=====  End of Components  ======*/
@@ -1681,3 +2049,41 @@ code.hljs {
 }
 
 /*=====  End of Code highlight  ======*/
+
+/*==============================
+=            Screen            =
+==============================*/
+
+.screen {
+  overflow: hidden;
+  border: var(--border);
+  background-color: var(--white);
+  border-radius: var(--rounded-md) var(--rounded-md) 0 0;
+}
+
+.screen + pre code.hljs {
+    border-radius: 0 0 var(--rounded-md) var(--rounded-md);
+}
+
+.screen_header {
+  padding: 15px;
+  display: flex;
+  grid-gap: 8px;
+  align-items: center;
+  border-bottom: var(--border);
+  background-color: var(--gray-100);
+}
+
+.white-board {
+  padding: 15px;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.screen .white-board > div > * {
+  margin: 5px;
+}
+/*=====  End of Screen  ======*/

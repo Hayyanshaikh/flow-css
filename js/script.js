@@ -7,6 +7,7 @@ $(function() {
     $(this).toggleClass("active")
     subList.stop(true, true).slideToggle(200);
   });
+
 });
 
 function setActiveListItem() {
