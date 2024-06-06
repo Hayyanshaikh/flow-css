@@ -1,6 +1,5 @@
 $(function() {
   setActiveListItem();
-
   $('.dashboard-list-item').click(function() {
     var clickedLink = $(this).children('.dashboard-list-link');
     var subList = clickedLink.next('.dashboard-sub-list');

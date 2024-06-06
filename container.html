@@ -24,7 +24,7 @@
       <menu class="dashboard-menu">
         <ul class="dashboard-list">
           <li class="dashboard-breck-title">Get Started</li>
-          <li class="dashboard-list-item active">
+          <li class="dashboard-list-item">
             <a href="index.html" class="dashboard-list-link">
               <span>Introduction</span>
             </a>
@@ -327,70 +327,98 @@
       </header>
       <article class="content">
         <div class="group mb-4">
-          <h3 class="weight-700">Welcome to Flow CSS</h3>
-          <p class="text-lg">Welcome to Flow CSS, a modern and versatile framework designed to streamline your web development process. With its intuitive structure and powerful features, Flow CSS empowers developers to create stunning and responsive websites with ease.</p>
+          <h3 class="weight-700">Container</h3>
+          <p class="text-lg">The container is a fundamental building block for layout in the Flow CSS framework. It ensures that your content is centered and has appropriate padding for different screen sizes.</p>
         </div>
-        <div class="group mb-3">
-          <h4 class="weight-700 mb-3">Getting Started:</h4>
-          <p class="text-lg">Get started by including flow's production-ready CSS and JavaScript via CDN without the need for any build steps.</p>
-          <ol class="unstyled-list mt-3 pl-3">
-            <li>
-              <p class="mb-3"><strong>1. Installation: </strong>Simply include the Flow CSS stylesheet in your HTML document, and you're ready to start using the framework.</p>
-              <pre style="tab-size: 6;">
-                <code class="language-html">
-&lt;!doctype html&gt;
-&lt;html lang="en"&gt;
-  &lt;head&gt;
-    &lt;meta charset="utf-8"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1"/&gt;
-    &lt;!-- flow style.css file --&gt;
-    &lt;link rel="stylesheet" href="https://hayyanshaikh.github.io/flow-css/static/flow.min.css"/&gt;
-    &lt;title&gt;flow demo&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;h1&gt;Hello, world!&lt;/h1&gt;
-
-    &lt;!-- flow script.js file --&gt;
-    &lt;script src="https://hayyanshaikh.github.io/flow-css/static/jquery.js"&gt;&lt;/script&gt;
-    &lt;script src="https://hayyanshaikh.github.io/flow-css/static/flow.min.js"&gt;&lt;/script&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-                </code>
-              </pre>
-            </li>
-            <li>
-              <p><strong>2. Documentation: </strong>Explore our comprehensive documentation to learn about Flow CSS's features, components, and best practices for implementation.</p>
-            </li>
-            <li>
-              <p><strong>3. Community Support:</strong> Join our thriving community of developers to exchange ideas, seek help, and stay updated on the latest developments in Flow CSS.</p>
-            </li>
-          </ol>
-        </div>
-        <div class="group">
-          <h4 class="weight-700">Download Flow CSS</h4>
-          <p class="text-lg mb-4">Ready to supercharge your web development projects with Flow CSS? Get started by downloading the framework today!</p>
-          <h6 class="weight-700">How to Download:</h6>
+        <div class="group mb-4">
           <ul class="unstyled-list pl-3">
             <li>
-              <p><strong>1. Download the Package:</strong> Click on the link to <a href="download.html">download</a> the framework.</p>
+              <h6 class="weight-700 mb-2">1. How They Work</h6>
+              <p>The container class adapts its maximum width based on the screen size, ensuring a responsive layout. It helps to center your content and includes padding to prevent content from touching the edges of the viewport.</p>
             </li>
             <li>
-              <p><strong>2. Include in Your Project:</strong> Once downloaded, extract the contents of the package and include the <span class="text-theme underline">style.css</span>, <span class="text-theme underline">jquery.js</span>, and <span class="text-theme underline">script.js</span> files in your HTML document.</p>
-              <pre class="mt-1">
+              <h6 class="weight-700 mb-2">2. Default Container</h6>
+              <p class="mb-3">To use the default container, simply add the container class to your HTML element. This ensures your content is centered and padded.</p>
+              <pre>
                 <code class="language-html">
-&lt;!-- flow css files --&gt;         
-&lt;link rel="stylesheet" href="./static/flow.min.css"/&gt;
-
-&lt;!-- flow js files --&gt;         
-&lt;script src="./static/jquery.js"&gt;&lt;/script&gt;
-&lt;script src="./static/flow.min.js"&gt;&lt;/script&gt;
+&lt;div class="container"&gt;
+  &lt;!-- Your content goes here --&gt;
+&lt;/div&gt;
                 </code>
               </pre>
             </li>
             <li>
-              <p><strong>3. Start Building:</strong> You're all set! Begin building responsive and visually appealing websites with Flow CSS's intuitive features and components.</p>
+              <h6 class="weight-700 mb-2">3. Breakpoint Containers</h6>
+              <p class="mb-3">These classes allow you to have containers that are 100% wide until a specific breakpoint:</p>
+              <pre>
+                <code class="language-html">
+&lt;div class="container-lg"&gt;100% wide until large breakpoint&lt;/div&gt;
+&lt;div class="container-xl"&gt;100% wide until extra large breakpoint&lt;/div&gt;
+&lt;div class="container-xxl"&gt;100% wide until extra extra large breakpoint&lt;/div&gt;
+                </code>
+              </pre>
+            </li>
+            <li>
+              <h6 class="weight-700 mb-2">4. Full-Container</h6>
+              <p class="mb-3">For scenarios where you need the container to span the full width of the viewport, use the <strong>full-container</strong> class. This class ensures that the container takes up the entire width of the screen.</p>
+              <pre>
+                <code class="language-html">
+&lt;div class="full-container"&gt;
+  &lt;!-- Your content goes here --&gt;
+&lt;/div&gt;
+                </code>
+              </pre>
             </li>
           </ul>
+        </div>
+        <div class="group mb-4">
+          <h5 class="weight-700">Features</h5>
+          <ul class="bullet-list pl-3">
+            <li><strong>Responsive Design:</strong> The container adjusts its maximum width based on the viewport size, ensuring optimal readability and layout across devices.</li>
+            <li><strong>Centered Content:</strong> By default, the container centers your content with auto margins.</li>
+            <li><strong>Padding:</strong> The container includes default padding to ensure your content does not touch the edges of the viewport.</li>
+          </ul>
+        </div>
+        <div class="group mb-4">
+          <h5 class="weight-700">Examples</h5>
+          <ul class="unstyled-list pl-3">
+            <li>
+              <h6 class="weight-700 mb-2">Basic Container</h6>
+              <pre>
+                <code class="language-html">
+&lt;div class="container"&gt;
+  &lt;p&gt;This is a basic container. Resize the browser window to see how it adjusts.&lt;/p&gt;
+&lt;/div&gt;
+                </code>
+              </pre>
+            </li>
+            <li>
+              <h6 class="weight-700 mb-2">Breakpoint Containers</h6>
+              <pre>
+                <code class="language-html">
+&lt;div class="container-sm"&gt;
+  &lt;p&gt;100% wide until small breakpoint.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="container-md"&gt;
+  &lt;p&gt;100% wide until medium breakpoint.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="container-lg"&gt;
+  &lt;p&gt;100% wide until large breakpoint.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="container-xl"&gt;
+  &lt;p&gt;100% wide until extra large breakpoint.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="container-xxl"&gt;
+  &lt;p&gt;100% wide until extra extra large breakpoint.&lt;/p&gt;
+&lt;/div&gt;
+                </code>
+              </pre>
+            </li>
+          </ul>
+        </div>
+        <div class="group">
+          <h5 class="weight-700">Summary</h5>
+          <p class="text-lg">Using the container class from Flow CSS is a simple and effective way to manage your layout and ensure your content is responsive and centered. The various breakpoint containers allow you to tailor your design to different screen sizes, providing flexibility and control over your layout. It's a versatile tool that can be used in various scenarios, from simple pages to complex web applications.</p>
         </div>
       </article>
       <footer class="footer"></footer>

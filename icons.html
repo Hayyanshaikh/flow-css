@@ -6,6 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>flow css</title>
   <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./static/flow.min.css" />
+  <link rel="stylesheet" type="text/css" href="./icons/regular/style.css">
+  <link rel="stylesheet" type="text/css" href="./icons/thin/style.css">
+  <link rel="stylesheet" type="text/css" href="./icons/light/style.css">
+  <link rel="stylesheet" type="text/css" href="./icons/bold/style.css">
+  <link rel="stylesheet" type="text/css" href="./icons/fill/style.css">
+  <link rel="stylesheet" type="text/css" href="./icons/duotone/style.css">
 </head>
 
 <body>
@@ -16,23 +23,16 @@
       </div>
       <menu class="dashboard-menu">
         <ul class="dashboard-list">
+          <li class="dashboard-breck-title">Get Started</li>
           <li class="dashboard-list-item">
-            <a href="javascript:void(0)" class="dashboard-list-link">
-              <i class="ph-bold ph-play-circle"></i>
-              <span>get started</span>
+            <a href="index.html" class="dashboard-list-link">
+              <span>Introduction</span>
             </a>
-            <ul class="dashboard-sub-list">
-              <li class="dashboard-list-item">
-                <a href="index.html" class="dashboard-list-link">
-                  <span>Introduction</span>
-                </a>
-              </li>
-              <li class="dashboard-list-item">
-                <a href="download.html" class="dashboard-list-link">
-                  <span>Download</span>
-                </a>
-              </li>
-            </ul>
+          </li>
+          <li class="dashboard-list-item">
+            <a href="download.html" class="dashboard-list-link">
+              <span>Download</span>
+            </a>
           </li>
           <li class="dashboard-breck-title">Layout</li>
           <li class="dashboard-list-item">
@@ -42,15 +42,15 @@
             </a>
           </li>
           <li class="dashboard-list-item">
-            <a href="columns.html" class="dashboard-list-link">
-              <i class="ph-bold ph-columns"></i>
-              <span>Columns</span>
-            </a>
-          </li>
-          <li class="dashboard-list-item">
             <a href="group.html" class="dashboard-list-link">
               <i class="ph-bold ph-square-split-vertical"></i>
               <span>Group</span>
+            </a>
+          </li>
+          <li class="dashboard-list-item">
+            <a href="columns.html" class="dashboard-list-link">
+              <i class="ph-bold ph-columns"></i>
+              <span>Columns</span>
             </a>
           </li>
           <li class="dashboard-list-item">
@@ -311,10 +311,7 @@
           <div class="navbar-wrapper">
             <ul class="navbar-menu">
               <li class="navbar-item">
-                <a href="index.html" class="navbar-link">Docs</a>
-              </li>
-              <li class="navbar-item">
-                <a href="icons.html" class="navbar-link active">Icons</a>
+                <a href="index.html" class="navbar-link active">Docs</a>
               </li>
               <li class="navbar-item">
                 <a href="about.html" class="navbar-link">About</a>
@@ -330,7 +327,7 @@
       </header>
       <article class="content">
         <div class="group">
-          <h4 class="weight-700">Phosphor Icons Integration</h4>
+          <h4 class="weight-700">Phosphor Icons</h4>
           <h6 class="weight-700">Using CDN:</h6>
           <ol class="unstyled-list pl-3">
             <li>
@@ -353,13 +350,13 @@
           <h6 class="weight-700 mt-5">Using Downloaded Files:</h6>
           <ol class="unstyled-list pl-3">
             <li>
-              <p><strong>1. </strong><a href="./downloads/icons.zip">Download Phosphor icons</a> and place the phosphor-icons.js file in the js folder of your project directory.</p>
+              <p><strong>1. </strong><a href="./downloads/icons.zip">Download Phosphor icons</a> and place the phosphor-icons.js file in the static folder of your project directory.</p>
             </li>
             <li>
               <p class="mb-2"><strong>2. </strong>Add the following `script` tag within the head section of your HTML document:</p>
               <pre>
                 <code class="language-html">
-&lt;script src="./js/phosphor-icons.js"&gt;&lt;/script&gt;
+&lt;script src="./static/phosphor-icons.min.js"&gt;&lt;/script&gt;
                 </code>
               </pre>
             </li>
@@ -379,8 +376,8 @@
   </main>
   <script src="./js/jquery.js"></script>
   <script src="./js/highlight.js"></script>
-  <script src="./js/phosphor-icons.js"></script>
   <script src="./js/script.js"></script>
+  <script src="./static/flow.min.js"></script>
   <script>
   hljs.highlightAll();
   </script>
