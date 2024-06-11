@@ -325,14 +325,201 @@
           </div>
         </div>
       </header>
-      <article class="content"></article>
+      <article class="content">
+        <div class="group mb-4">
+          <h3 class="weight-700">Accordion</h3>
+          <p class="text-lg">The Accordion component is a collapsible element that allows users to hide or reveal content in a vertical layout. It is useful for managing large amounts of content in a compact space.</p>
+        </div>
+        <div class="group mb-4">
+          <h5 class="weight-700">How They Work</h5>
+          <p class="mb-3">Accordions allow users to toggle the visibility of content sections. Each section can be expanded or collapsed individually.</p>
+          <blockquote class="screen">
+            <div class="screen_header">
+              <strong>Output:</strong>
+            </div>
+            <div class="white-board">
+              <div>
+                <div class="accordion" id="accordion">
+                  <div class="accordion-item">
+                    <div class="accordion-header">Accordient 1</div>
+                    <div class="accordion-content">
+                      <p>Content for section 1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, id, sunt! Ipsam amet eos accusamus, provident adipisci voluptatem, eveniet assumenda velit quisquam error vero nam quae soluta eius sunt beatae perspiciatis at explicabo possimus, quia. Distinctio molestias praesentium eligendi omnis.</p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-header">Accordient 2</div>
+                    <div class="accordion-content">
+                      <p>Content for section 2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi est animi, dolores officia eveniet velit expedita fugiat modi perspiciatis excepturi nostrum delectus adipisci doloremque porro, ea voluptatem quidem non voluptas repellendus magnam ipsa ratione sapiente, ex! Repudiandae, saepe aperiam magni!</p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-header">Accordient 3</div>
+                    <div class="accordion-content">
+                      <p>Content for section 3. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti numquam pariatur quos itaque, atque, maxime porro optio odio tenetur! Blanditiis, omnis aperiam minus odio magnam quam ut velit praesentium totam, qui at sit, reiciendis laborum dolores est ullam minima, consectetur.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </blockquote>
+          <pre>
+            <code class="language-html">
+&lt;div class="accordion" id="accordion"&gt;
+  &lt;div class="accordion-item"&gt;
+    &lt;div class="accordion-header"&gt;Accordion 1&lt;/div&gt;
+    &lt;div class="accordion-content"&gt;
+      &lt;p&gt;Content for section 1.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="accordion-item"&gt;
+    &lt;div class="accordion-header"&gt;Accordion 2&lt;/div&gt;
+    &lt;div class="accordion-content"&gt;
+      &lt;p&gt;Content for section 2.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="accordion-item"&gt;
+    &lt;div class="accordion-header"&gt;Accordion 3&lt;/div&gt;
+    &lt;div class="accordion-content"&gt;
+      &lt;p&gt;Content for section 3.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+            </code>
+          </pre>
+        </div>
+
+        <div class="group mb-4">
+          <h5 class="weight-700">Outline Accordion</h5>
+          <p class="mb-3">The Outline Accordion component offers a collapsible element with a distinct border and no background color, making it ideal for minimalistic designs.</p>
+          <blockquote class="screen">
+            <div class="screen_header">
+              <strong>Output:</strong>
+            </div>
+            <div class="white-board">
+              <div>
+                <div class="accordion accordion-outline" id="accordion">
+                  <div class="accordion-item">
+                    <div class="accordion-header">Accordient Outline 1</div>
+                    <div class="accordion-content">
+                      <p>Content for section 1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, id, sunt! Ipsam amet eos accusamus, provident adipisci voluptatem, eveniet assumenda velit quisquam error vero nam quae soluta eius sunt beatae perspiciatis at explicabo possimus, quia. Distinctio molestias praesentium eligendi omnis.</p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-header">Accordient Outline 2</div>
+                    <div class="accordion-content">
+                      <p>Content for section 2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi est animi, dolores officia eveniet velit expedita fugiat modi perspiciatis excepturi nostrum delectus adipisci doloremque porro, ea voluptatem quidem non voluptas repellendus magnam ipsa ratione sapiente, ex! Repudiandae, saepe aperiam magni!</p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-header">Accordient Outline 3</div>
+                    <div class="accordion-content">
+                      <p>Content for section 3. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti numquam pariatur quos itaque, atque, maxime porro optio odio tenetur! Blanditiis, omnis aperiam minus odio magnam quam ut velit praesentium totam, qui at sit, reiciendis laborum dolores est ullam minima, consectetur.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </blockquote>
+          <pre>
+            <code class="language-html">
+&lt;div class="accordion accordion-outline" id="accordion"&gt;
+  &lt;div class="accordion-item"&gt;
+    &lt;div class="accordion-header"&gt;Accordion Outline 1&lt;/div&gt;
+    &lt;div class="accordion-content"&gt;
+      &lt;p&gt;Content for section 1.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="accordion-item"&gt;
+    &lt;div class="accordion-header"&gt;Accordion Outline 2&lt;/div&gt;
+    &lt;div class="accordion-content"&gt;
+      &lt;p&gt;Content for section 2.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="accordion-item"&gt;
+    &lt;div class="accordion-header"&gt;Accordion Outline 3&lt;/div&gt;
+    &lt;div class="accordion-content"&gt;
+      &lt;p&gt;Content for section 3.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+            </code>
+          </pre>
+        </div>
+
+        <div class="group mb-4">
+          <h5 class="weight-700">Always Open First Accordion</h5>
+          <p class="mb-3">The Always Open First Accordion component ensures that the first section is always visible when the page loads, providing an immediate overview to users. The first section maintains an open class to keep it always expanded.</p>
+          <blockquote class="screen">
+            <div class="screen_header">
+              <strong>Output:</strong>
+            </div>
+            <div class="white-board">
+              <div>
+                <div class="accordion" id="accordion">
+                  <div class="accordion-item open">
+                    <div class="accordion-header">Accordient 1</div>
+                    <div class="accordion-content">
+                      <p>Content for section 1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, id, sunt! Ipsam amet eos accusamus, provident adipisci voluptatem, eveniet assumenda velit quisquam error vero nam quae soluta eius sunt beatae perspiciatis at explicabo possimus, quia. Distinctio molestias praesentium eligendi omnis.</p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-header">Accordient 2</div>
+                    <div class="accordion-content">
+                      <p>Content for section 2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi est animi, dolores officia eveniet velit expedita fugiat modi perspiciatis excepturi nostrum delectus adipisci doloremque porro, ea voluptatem quidem non voluptas repellendus magnam ipsa ratione sapiente, ex! Repudiandae, saepe aperiam magni!</p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-header">Accordient 3</div>
+                    <div class="accordion-content">
+                      <p>Content for section 3. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti numquam pariatur quos itaque, atque, maxime porro optio odio tenetur! Blanditiis, omnis aperiam minus odio magnam quam ut velit praesentium totam, qui at sit, reiciendis laborum dolores est ullam minima, consectetur.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </blockquote>
+          <pre>
+            <code class="language-html">
+&lt;div class="accordion" id="accordion"&gt;
+  &lt;div class="accordion-item open"&gt;
+    &lt;div class="accordion-header"&gt;Accordion 1&lt;/div&gt;
+    &lt;div class="accordion-content"&gt;
+      &lt;p&gt;Content for section 1.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="accordion-item"&gt;
+    &lt;div class="accordion-header"&gt;Accordion 2&lt;/div&gt;
+    &lt;div class="accordion-content"&gt;
+      &lt;p&gt;Content for section 2.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="accordion-item"&gt;
+    &lt;div class="accordion-header"&gt;Accordion 3&lt;/div&gt;
+    &lt;div class="accordion-content"&gt;
+      &lt;p&gt;Content for section 3.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+            </code>
+          </pre>
+        </div>
+
+        
+        <div class="group">
+          <h5 class="weight-700">Summary</h5>
+          <p class="text-lg">The Accordion component in Flow CSS is a versatile tool for managing content in a compact, organized manner. It allows users to expand and collapse sections as needed, making it ideal for FAQ sections, feature descriptions, and more.</p>
+        </div>
+      </article>
       <footer class="footer"></footer>
     </section>
   </main>
-  <script src="./js/phosphor-icons.js"></script>
+  <script src="./js/highlight.js"></script>
   <script src="./js/jquery.js"></script>
   <script src="./js/script.js"></script>
   <script src="./static/flow.min.js"></script>
+  <script>
+  hljs.highlightAll();
+  </script>
 </body>
 
 </html>

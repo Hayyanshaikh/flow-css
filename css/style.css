@@ -211,7 +211,7 @@ code.hljs {
 
 .hljs-tag,
 .hljs-quote {
-  color: #71ddff;
+  color: rgb(100 116 139);
 }
 
 .hljs-deletion,
@@ -219,13 +219,12 @@ code.hljs {
 .hljs-regexp,
 .hljs-template-variable,
 .hljs-variable {
-  color: #e85370;
+  color: rgb(244 114 182);
 }
 
 .hljs-built_in,
 .hljs-link,
 .hljs-literal,
-.hljs-keyword,
 .hljs-number,
 .hljs-params,
 .hljs-type {
@@ -235,14 +234,14 @@ code.hljs {
 .hljs-attr,
 .hljs-selector-class,
 .hljs-selector-id {
-  color: #ffcb6b;
+  color: rgb(203 213 225);
 }
 
 .hljs-addition,
 .hljs-bullet,
 .hljs-string,
 .hljs-symbol {
-  color: #c3e878;
+  color: rgb(125 211 252);
 }
 
 .hljs-section,
@@ -253,8 +252,9 @@ code.hljs {
 
 .hljs-selector-tag,
 .hljs-meta,
+.hljs-keyword,
 .hljs-selector-pseudo {
-  color: #c792bf;
+  color: rgb(248 250 252);
 }
 
 .hljs {

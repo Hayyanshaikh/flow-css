@@ -1200,21 +1200,26 @@ li p {
   display: inline-block;
 }
 
-.border{
+.border {
   border: var(--border);
 }
-.border-top{
+
+.border-top {
   border-top: var(--border);
 }
-.border-bottom{
+
+.border-bottom {
   border-bottom: var(--border);
 }
-.border-left{
+
+.border-left {
   border-left: var(--border);
 }
-.border-right{
+
+.border-right {
   border-right: var(--border);
 }
+
 /*=====  End of Utilities  ======*/
 
 /*===================================
@@ -1815,5 +1820,67 @@ li p {
   color: var(--theme);
 }
 
-
 /*=====  End of Navbar  ======*/
+
+/*==================================
+=            Accordient            =
+==================================*/
+
+.accordion {
+  width: 100%;
+  overflow: hidden;
+  margin: 20px auto;
+  margin: 0 !important;
+  border-radius: var(--rounded);
+  border: var(--border);
+}
+
+.accordion-item:not(:last-child) {
+  border-bottom: var(--border);
+}
+
+.accordion-header {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 12px;
+  color: var(--gray-800);
+  transition: 0.2s ease;
+  border-bottom: var(--border);
+  border-color: transparent;
+  justify-content: space-between;
+  font-weight: var(--weight-600);
+  font-size: clamp(14px,2vw,16px);
+  background-color: var(--gray-50);
+}
+
+.accordion-header:after{
+  content: "\E136";
+  transition: 0.5s ease;
+  font-family: var(--icon);
+}
+
+.accordion-header.active:after{
+  rotate: -180deg;
+}
+
+.accordion-header.active{
+  border-color: var(--gray-100);
+}
+
+.accordion-outline{
+  border: none;
+}
+
+.accordion-outline .accordion-header{
+  background-color: transparent;
+}
+
+.accordion-content {
+  display: none;
+  padding: 10px;
+  background-color: #fff;
+}
+
+/*=====  End of Accordient  ======*/
