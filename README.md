@@ -1,4 +1,3 @@
-![Flow Banner](https://placehold.co/1400x400)
 # Flow CSS
 
 **Flow CSS** is a small yet powerful CSS library that can assist you in web development.
